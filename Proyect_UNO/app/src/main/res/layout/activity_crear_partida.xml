@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ejemplo.proyect_uno.crear_partida"
+    android:id="@+id/layout_crear_partida"
+    android:background="#ffe12312"
+    android:longClickable="true">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:id="@+id/nameRepartidor"
+        android:typeface="monospace"
+        android:backgroundTint="#ffcd34a0"
+        android:autoText="false"
+        android:enabled="true"
+        android:textColor="#fffaff61"
+        android:text="Nombre Repartidor"
+        android:editable="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textJugadores" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Partida"
+        android:id="@+id/btn_iniciar_partida"
+        android:textColor="#ffcd34a0"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/listaJugadoresVista"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textJugadores"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Busqueda"
+        android:id="@+id/btn_iniciar_busqueda"
+        android:textColor="#ffcd34a0"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_below="@+id/listaJugadoresVista"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jugadores Conectados"
+        android:id="@+id/textJugadores"
+        android:layout_below="@+id/nameRepartidor"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:enabled="true"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#fffaff61"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_iniciar_busqueda"
+        android:id="@+id/listaJugadores"></FrameLayout>
+
+</RelativeLayout>

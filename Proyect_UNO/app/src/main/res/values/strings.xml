@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Proyect_UNO</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crear_partida">crear_partida</string>
+    <string name="title_activity_unirse_partida">unirse_partida</string>
+    <string name="title_activity_tablero">Tablero</string>
+</resources>
