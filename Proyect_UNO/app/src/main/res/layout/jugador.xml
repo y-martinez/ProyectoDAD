@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -34,3 +35,41 @@
         android:layout_toRightOf="@+id/NombreJugador"
         android:layout_marginLeft="45dp" />
 </RelativeLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/layout_jugador"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#ffe12312">
+
+    <TextView
+        android:id="@+id/NombreJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#fffaff61"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/IP_Jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small Text"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#fffaff61"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/NombreJugador"
+        android:layout_toRightOf="@+id/NombreJugador"
+        android:layout_marginLeft="45dp" />
+</RelativeLayout>
+>>>>>>> 1a20724db2f1d6e3f3afe778356241fe75d2abe0

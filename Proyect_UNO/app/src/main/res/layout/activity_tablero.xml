@@ -1,3 +1,94 @@
+<<<<<<< HEAD
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ejemplo.proyect_uno.Tablero"
+    android:background="#ffe12312"
+    android:id="@+id/tablero_jugador">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desafiar"
+        android:id="@+id/btn_desafiar"
+        android:textColor="#ffcd34a0"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_above="@+id/btn_jugar_carta"
+        android:layout_alignRight="@+id/btn_jugar_carta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugar Carta"
+        android:id="@+id/btn_jugar_carta"
+        android:textColor="#ffcd34a0"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cartas"
+        android:id="@+id/listaCarta"
+        android:enabled="true"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#fffaff61"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp" />
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartas"
+        android:layout_below="@+id/listaCarta"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tablero"
+        android:id="@+id/text_pozo"
+        android:enabled="true"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="#fffaff61"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_above="@+id/cartas"
+        android:layout_alignRight="@+id/btn_desafiar" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/mazo_cartas"
+        android:src="@drawable/carta_boca_abajo"
+        android:layout_below="@+id/text_pozo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/pozo_cartas"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/mazo_cartas"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>
+=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -86,3 +177,4 @@
         android:layout_alignParentEnd="false" />
 
 </RelativeLayout>
+>>>>>>> 1a20724db2f1d6e3f3afe778356241fe75d2abe0
